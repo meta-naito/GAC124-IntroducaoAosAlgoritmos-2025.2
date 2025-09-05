@@ -1,3 +1,4 @@
+//semana 4, ex 10
 #include <iostream>
 using namespace std;
 
