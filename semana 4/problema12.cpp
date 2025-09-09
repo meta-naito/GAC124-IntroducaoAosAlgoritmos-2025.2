@@ -1,6 +1,7 @@
 //semana 4, ex 12
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 int main()
 {
