@@ -1,0 +1,32 @@
+//semana 5, ex 1
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() 
+{
+	int valor, menor, maior, sMaior, sMenor, aux; //nao sei se precisa colocar um auxiliar aqui pra salvar minha vida :'''')
+	
+	ifstream entrada("entrada.txt");
+	entrada >> valor;
+	
+	aux = menor = valor; //para ter algum numero para conseguir comparar!
+	
+	while (entrada >> valor) { //enquanto a entrada recebe algum valor
+		if (valor > maior) //se o valor for MAIOR que o numero na variavel maior,
+			maior = valor; //o valor é atrubuído a variavel maior!!
+		if (valor < menor)
+			menor = valor;
+	}
+	
+	entrada.clear();
+	
+	while (entrada >> valor) {
+		if (
+
+
+
+	cout << menor << " " << maior << endl;
+	
+	return 0;
+}
