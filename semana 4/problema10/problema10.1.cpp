@@ -1,3 +1,4 @@
+//tentativa de fazer o ex 10 por switch e case; não deu certo :(
 #include <iostream>
 using namespace std;
 
