@@ -9,7 +9,7 @@ int main()
 	int cont = 0;
 	string resultado;
 	
-	ifstream entrada("tentativas10.5.txt");
+	ifstream entrada("tentativas.txt");
 	if (entrada) {
 		while (entrada >> tentativa) { //enquanto ainda tem tentativa, ou seja numeros no arquivo;
 		cont++;	//aumenta a contagem em 1

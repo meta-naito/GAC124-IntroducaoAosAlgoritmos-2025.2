@@ -8,7 +8,7 @@ int main()
 	int limiteA, limiteB, pontos;
 	int competidores = 0;
 	
-	ifstream entrada("dados11.5.txt");
+	ifstream entrada("dados.txt");
 	
 	if (entrada){
 		entrada >> limiteA >> limiteB;

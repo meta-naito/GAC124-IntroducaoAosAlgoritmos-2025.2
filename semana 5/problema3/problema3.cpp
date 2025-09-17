@@ -9,7 +9,7 @@ int main()
 	int num, mersenne, n = -1;
     bool tudoOK = true;
     
-    ifstream entrada("entrada3.5.txt");
+    ifstream entrada("entrada.txt");
     entrada >> num;
 
     do {

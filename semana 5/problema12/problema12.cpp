@@ -10,7 +10,7 @@ int main()
 	int qChapa1, qChapa2, somaChapa1 = 0, somaChapa2 = 0, somaVencedor;
 	float porcentagem;
 	
-	ifstream entrada("eleicao12.5.txt");
+	ifstream entrada("eleicao.txt");
 		entrada >> chapa1 >> chapa2;
 		while (entrada >> localVotacao >> qChapa1 >> qChapa2) {
 			somaChapa1 += qChapa1;
