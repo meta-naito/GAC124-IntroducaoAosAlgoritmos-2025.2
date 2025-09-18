@@ -2,24 +2,25 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
+
 using namespace std;
 
-int main()
-{
-	int num, mersenne, n = -1;
-    bool tudoOK = true;
-    
-    ifstream entrada("entrada.txt");
+int main () {
+    int num, mersenne = 0, i= 0;
+
+    ifstream entrada("senha.txt");
     entrada >> num;
 
+    ofstream saida("saida.txt");
+
     do {
-        n++;
-        mersenne = (pow(2,n) - 1);
-        if (mersenne == num)
-            tudoOK = false;
-    } while (tudoOK);
+        mersenne = (pow(2, i) - 1); //essa parte ta indo de boa, os numeros sao de mersenne mesmo
+        i++;
+        saida << mersenne << "  ";
 
-    cout << mersenne << endl;
+    } while (mersenne <= num); //AGORA, voce NAO ta indo!!! odio!!!!
 
-	return 0;
+    saida.close();
+    entrada.close();
+    return 0;
 }
