@@ -6,20 +6,18 @@
 using namespace std;
 
 int main () {
-    int num, mersenne = 0, i= 0;
+    int num = 0, mersenne = 0, i= 0;
 
     ifstream entrada("senha.txt");
     entrada >> num;
 
     ofstream saida("saida.txt");
 
-    do {
-        mersenne = (pow(2, i) - 1); //essa parte ta indo de boa, os numeros sao de mersenne mesmo
+	while ((mersenne = pow(2, i) - 1) <= num) {
         i++;
         saida << mersenne << "  ";
-
-    } while (mersenne <= num); //AGORA, voce NAO ta indo!!! odio!!!!
-
+	}
+	
     saida.close();
     entrada.close();
     return 0;
