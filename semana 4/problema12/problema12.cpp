@@ -1,8 +1,8 @@
 //semana 4, ex 12
 #include <iostream>
 #include <iomanip>
-using namespace std;
 
+using namespace std;
 int main()
 {
 	float vTrem1, vTrem2, dist, tempo;
