@@ -3,8 +3,7 @@
 #include <fstream>
 using namespace std;
 
-int main()
-{
+int main () {
 	int limiteA, limiteB, pontos;
 	int competidores = 0;
 	
@@ -19,7 +18,7 @@ int main()
 		}
 
 	cout << competidores << endl;
-	entrada.close();
 	
+	entrada.close();
 	return 0;
 }

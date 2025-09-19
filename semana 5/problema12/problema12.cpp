@@ -4,8 +4,7 @@
 #include <iomanip>
 using namespace std;
 
-int main()
-{
+int main() {
 	string chapa1, chapa2, localVotacao, vencedor;
 	int qChapa1, qChapa2, somaChapa1 = 0, somaChapa2 = 0, somaVencedor;
 	float porcentagem;
