@@ -1,0 +1,17 @@
+3 3 3 3 3 3 3 3 3 3 1
+
+
+aux = N = num = 6804
+soma = soma + 4 == 4
+
+SE aux = divisao toda == 680
+soma = soma + 0 == 4
+
+aux == 68
+soma = soma + 8 == 12
+
+aux = 6
+soma = soma + 6 == 18!
+
+OU SEJA, tem que deixar o 10 ai quieto
+e fazer o aux virar a divisao do num p 10
