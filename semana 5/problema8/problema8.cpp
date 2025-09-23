@@ -14,6 +14,7 @@ int main() {
 
     //por acaso c++ tem diferenca entre maiuscula e minuscula?
     while (entrada >> charaUndertale) {
+        // Transformar maiuscula
         //letra a
         if ((charaUndertale == 'a') or (charaUndertale == 'A'))
             vogais++;
