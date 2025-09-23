@@ -3,7 +3,8 @@
 using namespace std;
 
 int somaDigitos(int N) { //nao pode manipular o N pq precisa dele pro outro la de harshad :(
-    int aux = N, i = 10, soma = 0;
+    int aux = N, soma = 0;
+    const int i = 10;
 
     while (aux > 0) {
         soma += (aux % i);
