@@ -1,34 +1,35 @@
-//semana 6, ex 4
+//semana 6, ex 3
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
-float inclinacao (int h, int b) {
-    float inclinacao;
+float cmPm(float& d) {
+    float cmPm;
+    cmPm = d / 100;
 
-    inclinacao = (((float)h * 100) / b);
-
-    return inclinacao;
+    return cmPm;
 }
 
-
+float mPcm(float& d) {
+    float mPcm;
+    mPcm = d * 100;
+    
+    return mPcm;
+}
 
 int main () {
-    int rampas, base, altura, rampasCertas = 0;
+    float distancia;
+    string unidade;
 
-    cin >> rampas;
+    cin >> distancia >> unidade;
 
-    //a altura e base das rampas ditas
-    for (; rampas > 0; rampas--) {
-        cin >> altura >> base;
+    if (unidade == "centimetro") 
+        cout << mPcm(distancia) << " cm" << endl;
 
-        if (inclinacao(altura, base) <= 8)
-            rampasCertas++;
-        cout << inclinacao(altura, base) << endl;
-    }
-    
-    cout << rampasCertas << endl;
+    else if (unidade == "metro")
+        cout << cmPm(distancia) << " m" << endl;
 
+    else 
+        cout << "ERRO" << endl;
 
     return 0;
 }
