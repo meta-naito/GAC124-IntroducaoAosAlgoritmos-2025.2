@@ -22,17 +22,16 @@ int main () {
     const int tamVetor = 15;
     int vetor[tamVetor];
 
-    for (int i = 0; i < tamVetor; i++) {
+    for (int i = 0; i < tamVetor; i++)
         cin >> vetor[i];
-    }
     
     int maior = calcMaior(vetor, tamVetor);
     
     divisao(vetor, tamVetor, maior);
     
-    for (int i = 0; i < tamVetor; i++) {
+    for (int i = 0; i < tamVetor; i++)
         cout << vetor[i] << " ";
-    }
+        
     cout << endl;
 
     return 0;
