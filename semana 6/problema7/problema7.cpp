@@ -19,7 +19,7 @@ string romano(int N) {
         dezena -= 4;
     }
     if ((dezena < 4) and (dezena > 0)) {
-        for (dezena; dezena > 0; dezena--)
+        for (dezena = N/10; dezena > 0; dezena--)
             romano += "X";
     }
     else
@@ -38,8 +38,10 @@ string romano(int N) {
         unidade -= 4;
     }
     if ((unidade >= 1) and (unidade <=3)) {
-        for (unidade; unidade > 0; unidade--)
-            romano += "I";
+        while (unidade > 0) {
+			romano += "I";
+			unidade--;
+		}
     }
     else
         romano += "";
@@ -50,12 +52,12 @@ string romano(int N) {
 int main() {
     int num = 1;
 
-    while (num > 0) {
+    do {
         cin >> num;
         if (num > 50)
             cout << "NUMERO INVALIDO" << endl;
         else
             cout << romano(num) << endl;
-    }
+    } while (num >= 1);
     return 0;
 }
