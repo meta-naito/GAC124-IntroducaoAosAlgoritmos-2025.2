@@ -7,16 +7,15 @@ int calcMaior(int vet[], int tam) {
     
     for (int i = 0; i < tam; i++) {
         if (vet[i] > maior)
-                maior = vet[i];
+            maior = vet[i];
     }
 
     return maior;
 }
 
 void divisao(int vet[], int tam, int maior) {
-    for (int i = 0; i < tam; i++) {
+    for (int i = 0; i < tam; i++)
         vet[i] /= maior;
-    }
 }
 
 int main () {
