@@ -23,7 +23,7 @@ int main () {
     cin >> rampas;
 
     //a altura e base das rampas ditas
-    for (int i = 0; i < rampas; rampas++) {
+    for (int i = 0; i < rampas; i++) {
         cin >> altura >> base;
 
         inclinacaoFoda = inclinacao(altura, base);
