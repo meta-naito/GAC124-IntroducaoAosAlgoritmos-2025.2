@@ -3,12 +3,12 @@
 using namespace std;
 
 int somaDigitos(int N) { //nao pode manipular o N pq precisa dele pro outro la de harshad :(
-    int aux = N, soma = 0;
+    int soma = 0;
     const int i = 10;
 
-    while (aux > 0) {
-        soma += (aux % i);
-        aux = aux/i;
+    while (N > 0) {
+        soma += (N % i);
+        N = N/i;
     }
 
     return soma;
