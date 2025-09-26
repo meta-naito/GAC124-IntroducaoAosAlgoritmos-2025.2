@@ -13,8 +13,6 @@ int minSono (int h1, int m1, int h2, int m2) {
 
     if (h2 < h1)
         tempoFinal += totalDia;
-
-    if (())
         
     minSono = tempoFinal - tempoInicial;
 

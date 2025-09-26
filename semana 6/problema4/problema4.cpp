@@ -5,14 +5,14 @@
 using namespace std;
 
 float inclinacao (int h, int b) {
-    float inclinacao = 0.0;
+    float anguloRampa = 0.0;
     
     if (b == 0)
         return 0;
 
-    inclinacao = (((float)h * 100) / b);
+    anguloRampa = ((float)(h * 100.0) / b);
 
-    return inclinacao;
+    return anguloRampa;
 }
 
 int main () {
@@ -23,7 +23,7 @@ int main () {
     cin >> rampas;
 
     //a altura e base das rampas ditas
-    for (; rampas > 0; rampas--) {
+    for (int i = 0; i < rampas; rampas++) {
         cin >> altura >> base;
 
         inclinacaoFoda = inclinacao(altura, base);
@@ -32,7 +32,7 @@ int main () {
             rampasCertas++;
         }
 
-        cout << fixed << setprecision(1) << inclinacaoFoda << endl;
+        cout << inclinacaoFoda << endl;
     }
     
     cout << rampasCertas << endl;
