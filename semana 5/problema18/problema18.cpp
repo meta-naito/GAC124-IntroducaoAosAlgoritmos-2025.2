@@ -3,28 +3,35 @@
 #include <fstream>
 using namespace std;
 
-int main() {
-	int qPrimos, i = 0;
+bool calculaPrimo (int primo) {
+    bool ePrimo = true;
+    int i = 2;
+
+    while (i <= (primo/2)) {
+        
+        if (primo % i == 0) {
+        ePrimo = false;
+        }
+        
+        i++;
+    }
+    return ePrimo;
+}
+
+int main () {
+    int qPrimos = 0, primo = 2;
     
     cin >> qPrimos;
+    int n = qPrimos;
 
-    ofstream saida("saida.txt");
+    ofstream saida("saida");
 
-    while (qPrimos > 0) {
-        int divisor = 2, N = 2;
-        bool primo = true;
-        
-            while (divisor <= N) {
-                if (N % divisor == 0)
-                    primo = false;
-                divisor++;
-            }
-            if (primo) {
-                saida << N << endl;
-                qPrimos--;
-                N++;
-            }
-        
+    while (n > 0) { //contagem dos n numeros primos
+        if (calculaPrimo(primo) == true) {
+            saida << primo << endl;
+            n--;
+        }
+        primo++;
     }
 
 	return 0;
