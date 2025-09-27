@@ -10,7 +10,7 @@ bool calculaPrimo (int primo) {
     while (i <= (primo/2)) {
         
         if (primo % i == 0) {
-        ePrimo = false;
+            ePrimo = false;
         }
         
         i++;
