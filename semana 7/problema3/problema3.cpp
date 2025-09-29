@@ -30,7 +30,7 @@ int calculaMaior (int vetMultiplo[], int tam, int multiplo) {
 int main () {
     const int tamVetor = 10;
     int vetorPrincipal[tamVetor];
-    
+
     for (int i = 0; i < tamVetor; i++) {
         cin >> vetorPrincipal[i];
     }
