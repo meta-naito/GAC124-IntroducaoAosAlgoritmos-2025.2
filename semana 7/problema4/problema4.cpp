@@ -32,23 +32,22 @@ string situacaoAluno (int nota[], int indiceNota) {
 
 int main () {
     const int tamGabarito = 10, tamIndiceProva = 2;
-    char gabarito[tamGabarito], gabProva[tamGabarito];
-    int nota[tamIndiceProva], j = 0; //o tamanho do vetor pode mudar dependendo do numero de alunos
-
+    char gabarito[tamGabarito], gabAlunos[tamGabarito]; //gabAlunos é a prova dos alunos
+    int nota[tamIndiceProva]; //o tamanho do vetor pode mudar dependendo do numero de alunos
 
     for (int i = 0; i < tamGabarito; i++) { //lendo o gabarito principal
         cin >> gabarito[i];
     }
 
     for (int i = 0; i < tamGabarito; i++) { //o gabarito da prova 1;
-        cin >> gabProva[i];
+        cin >> gabAlunos[i];
     }
-    nota[0] = qAcertos(gabarito, gabProva, tamGabarito);
+    nota[0] = qAcertos(gabarito, gabAlunos, tamGabarito);
 
     for (int i = 0; i < tamGabarito; i++) { //o gabarito da prova 2;
-        cin >> gabProva[i];
+        cin >> gabAlunos[i];
     }
-    nota[1] = qAcertos(gabarito, gabProva, tamGabarito);
+    nota[1] = qAcertos(gabarito, gabAlunos, tamGabarito);
 
     cout << nota[0] << endl << situacaoAluno(nota, 0) << endl
     << nota[1] << endl << situacaoAluno(nota, 1) << endl;
