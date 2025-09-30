@@ -37,7 +37,7 @@ float calculaMaior(float vetor[], int tam) {
 }
 
 float calculaSegundoMaior(float vetor[], int tam) {
-    float vetorAux[tam] = {true, true, true, true, true, true, true, true, true, true};
+    bool vetorAux[tam] = {true, true, true, true, true, true, true, true, true, true};
     float maior = calculaMaior(vetor, tam);
     
     for (int i = 0; i < tam; i++) {
