@@ -47,6 +47,7 @@ float calculaSegundoMaior(float vetor[], int tam) {
     }
 
     float segMaior = vetor[0];
+    
     //caso o maior elemento seja o primeiro elemento do vetor
     if (vetor[0] == maior) {
         segMaior = vetor[1];
