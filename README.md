@@ -12,7 +12,6 @@ honestamente, não acho que os códigos estão otimizados ou até bons, mas esto
 
 <hr>
 
-<ins><strong>**ESPECIFICAÇÕES:**</strong></ins> no meu próprio computador (um laptop da lenovo com uns 7 anos já *risos*), utilizo o VS Code na versão mais recente do Windows 11. Minhas configurações do VS Code vão também estar neste repositório, mas o básico delas são que *tirei todas as ajudas e dicas possíveis, como o preenchimento automático de aspas e chaves*.
-<p> além disso, possuo uma máquina virtual que roda o Ubuntu Linux (sistema operacional das máquinas do curso), para utilizar a IDE rodada durante as aulas: o Geany. </p>
+<ins><strong>**ESPECIFICAÇÕES:**</strong></ins> no meu próprio computador (um laptop da lenovo com uns 7 anos já *risos*), utilizo o VS Code na versão mais recente do Windows 11 e do Ubuntu Linux. Minhas configurações do VS Code vão também estar neste repositório, mas o básico delas são que *tirei todas as ajudas e dicas possíveis, como o preenchimento automático de aspas e chaves*
 
 
