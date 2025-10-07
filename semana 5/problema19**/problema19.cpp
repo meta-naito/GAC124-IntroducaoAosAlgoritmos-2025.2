@@ -1,10 +1,11 @@
 //semana 5, ex 19
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 int main () {
-    string nomeVoto = "", nome1 = "", nome2 = "", nome3 = "", arqEntrada = "";
+    string voto = "", nome1 = "", nome2 = "", nome3 = "", arqEntrada = "";
     int qVotos = 0, votos1, votos2, votos3;
 
     cin >> arqEntrada;
@@ -13,11 +14,11 @@ int main () {
         entrada >> nome1 >> nome2 >> nome3 >> qVotos;
     
     //contagem dos votos
-    while (entrada >> nomeVoto) {
-        if (nomeVoto == nome1) {
+    while (entrada >> voto) {
+        if (nome1.compare(voto) == 0) {
             votos1++;
         }
-        else if (nomeVoto == nome2) {
+        else if (nome2.compare(voto) == 0) {
             votos2++;
         }
         else {
@@ -27,13 +28,13 @@ int main () {
 
     //escolhendo o que ganhou mais votos
     if ((votos1 > votos2) and (votos1 > votos3)) {
-        cout << votos1 << endl;
+        cout << votos1 << " " << nome1 << endl;
     }
     else if ((votos2 > votos1) and (votos2 > votos3)) {
-        cout << votos2 << endl;
+        cout << votos2 << " " << nome2 << endl;
     }
     else {
-        cout << votos3 << endl;
+        cout << votos3 << " " << nome3 << endl;
     }
 
     return 0;
