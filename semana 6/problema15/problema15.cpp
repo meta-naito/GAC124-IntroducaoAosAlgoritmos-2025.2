@@ -3,29 +3,24 @@
 using namespace std;
 
 
-void mdc(int& numerador, int& denominador) {
-    //achar o MDC
+int calculaSimplificacao(int& num) {
     int aux = 2;
-    bool divisor = true;
 
-    while ((aux <= numerador) or (aux <= denominador)) {
-        if ((numerador % aux == 0) and (denominador % aux == 0)) {
-            divisor = true;
-            
-            if (divisor) {
-                numerador /= divisor;
-                denominador /= divisor;
-            }
+    while (num >= 1) {
+        if (num % aux == 0) {
+            num /= aux;
         }
-
         aux++;
     }
 
+    return num;
 }
 
 int main () {
     int numerador, denominador;
+    cin >> numerador >> denominador;
 
+    cout << calculaSimplificacao(numerador);//<< endl << calculaSimplificacao(denominador) << endl;
 
 
     return 0;
