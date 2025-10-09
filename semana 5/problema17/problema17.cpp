@@ -1,14 +1,15 @@
 //semana 5, ex 17
 #include <iostream>
 #include <fstream>
-#include <iomanip>
+#include <cmath>
 using namespace std;
 
 float media(float valor, int i) {
-    return (valor / i);
+    return ((float)valor / i);
 }
 
 int main() {
+    const float erro = 0.00001;
     float salario = 0;
     int nFilhos = 0;
 
@@ -28,13 +29,14 @@ int main() {
         }
 
         //calculo da porcentagem
-        if (salario <= 1000.00) {
+        if ((salario < 1000.00) or (abs(salario - 1000) <= erro)) {
         porcentagem++;
         }
     }
 
-    cout << fixed << setprecision(2) << media(qSalario, i) << endl << media(qFilhos, i) << endl
-    << maior << endl << (porcentagem / i) << endl;
+    cout << media(qSalario, i) 
+         << endl << media(qFilhos, i) << endl << maior 
+         << endl << (porcentagem / i) << endl;
 
     return 0;
 }
