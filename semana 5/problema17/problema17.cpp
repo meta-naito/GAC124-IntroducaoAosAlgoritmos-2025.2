@@ -9,7 +9,7 @@ float media(float valor, int i) {
 }
 
 int main() {
-    const float erro = 0.00001;
+    const float erroFloat = 0.00001;
     float salario = 0;
     int nFilhos = 0;
 
@@ -29,7 +29,7 @@ int main() {
         }
 
         //calculo da porcentagem
-        if ((salario < 1000.00) or (abs(salario - 1000) <= erro)) {
+        if ((salario < 1000.00) or (abs(salario - 1000) <= erroFloat)) {
         porcentagem++;
         }
     }
