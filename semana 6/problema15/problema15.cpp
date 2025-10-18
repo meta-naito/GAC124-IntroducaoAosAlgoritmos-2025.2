@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 int calculaSimplificacao(int& num) {
     int aux = 2;
 
