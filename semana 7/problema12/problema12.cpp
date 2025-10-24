@@ -13,18 +13,17 @@ float calcSoma(float vet[], int tam) {
     return soma;
 }
 
-
 int main () {
     int tamVetor = 16; //NÃO é pra ser constante!!!! precisa de mudar pra fzr a somatoria :)
-    int num = 0;
+    int nSomatoria = 0;
     float vetor[tamVetor];
 
     for (int i = 0; i < tamVetor; i++) {
         cin >> vetor[i];
     }
     
-    cin >> num;
-    tamVetor = num;
+    cin >> nSomatoria;
+    tamVetor = nSomatoria;
 
     float somatorio = calcSoma(vetor, tamVetor);
 

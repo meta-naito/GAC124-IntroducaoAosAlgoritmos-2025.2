@@ -2,7 +2,9 @@
 #include <iostream>
 using namespace std;
 
-void calculaMultiplo (int vet[], int tam, int multiplo) {
+int calculaMaior(int vetMultiplo[], int tam, int multiplo);
+
+void calculaMultiplo(int vet[], int tam, int multiplo) {
     int vetMultiplo[tam];
     int j = 0;
 
@@ -14,12 +16,13 @@ void calculaMultiplo (int vet[], int tam, int multiplo) {
             j++; //aumenta a posicao do vetor multiplo em 1
         }
     }
+    cout << endl << calculaMaior(vetMultiplo, j, multiplo) << endl;
 }
 
-int calculaMaior (int vetMultiplo[], int tam, int multiplo) {
-    int maior = vetMultiplo[0]; //so to colocando j pra indicar que é o vetMultiplo que eu to falando
+int calculaMaior(int vetMultiplo[], int tam, int multiplo) {
+    int maior = vetMultiplo[0]; 
 
-    for (int j = 0; j < tam; j++) {
+    for (int j = 0; j < tam; j++) { //so to colocando j pra indicar que é o vetMultiplo que eu to falando
         if ((vetMultiplo[j] > maior) and (vetMultiplo[j] % multiplo == 0)) {
             maior = vetMultiplo[j];
         }
@@ -27,7 +30,7 @@ int calculaMaior (int vetMultiplo[], int tam, int multiplo) {
     return maior;
 }
 
-int main () {
+int main() {
     const int tamVetor = 10;
     int vetorPrincipal[tamVetor];
 
@@ -36,10 +39,8 @@ int main () {
     }
 
     calculaMultiplo(vetorPrincipal, tamVetor, 2);
-    cout << endl << calculaMaior(vetorPrincipal, tamVetor, 2) << endl;
 
     calculaMultiplo(vetorPrincipal, tamVetor, 3);
-    cout << endl << calculaMaior(vetorPrincipal, tamVetor, 3) << endl;
 
     return 0;
 }
