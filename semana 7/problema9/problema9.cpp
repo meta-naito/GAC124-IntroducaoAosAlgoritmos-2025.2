@@ -4,14 +4,14 @@ using namespace std;
 
 int calculaMenor(int vet[], int tam) {
     int menor = 0;
-    
+    //inicialização do menor, para que ele não fique igual a -1
     for (int i = 0; i < tam; i++) {
         if (vet[i] >= 0) {
             menor = vet[i];
 
         }
     }
-
+    //procura do menor mesmo
     for (int i = 0; i < tam; i++) {
         if ((vet[i] >= 0) and (vet[i] < menor)) {
             menor = vet[i];
@@ -38,13 +38,13 @@ int main() {
 
     while (i < tamVetor) {
         cin >> aux;
-
+        //checagem da entrada: se ela for negativa não entra como um número no vetor :)
         if (aux >= 0) {
             vetor[i] = aux;
             i++;
         }
     }
-
+    //as iterações pra mostrar o vetor transformado; sao 5 pq são 5 números no vetor para mudar
     for (int iteracoes = 1; iteracoes <= tamVetor; iteracoes++) {
         subsOrdenada(vetor, tamVetor);
         cout << endl;
