@@ -6,9 +6,6 @@
 using namespace std;
 typedef string str; //muita preguiça de ficar escrevendo string; valeu python!
 
-str
-
-
 int main() {
     str nomeArq, linha = "";
 
