@@ -7,9 +7,10 @@ typedef string str;
 int main() {
     int tamMatriz = 0;
     const int tamSub = 2;
+    bool temSubMatriz = false;
     
     cin >> tamMatriz;
-    
+
     char matriz[tamMatriz][tamMatriz] = {};
 
     for (int i = 0; i < tamMatriz; i++){
