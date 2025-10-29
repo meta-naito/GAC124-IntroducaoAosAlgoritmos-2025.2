@@ -7,7 +7,6 @@ using namespace std;
 //p variavel é o contrario, o nome indica mesmo oq tem no endereço de memoria
 //saber o endereço mesmo vc usa &
 
-
 int main() {
     int qNum = 0;
     bool capicua = true;

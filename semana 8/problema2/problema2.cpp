@@ -16,26 +16,22 @@ int main() {
     int *vetor1 = new int[qNum];
     int *vetor2 = new int[qNum];
 
-    leitura(vetor1, qNum);
-    leitura(vetor2, qNum);
-    
-    bool iguais = true;
+    for (int i = 0; i < qNum; i++) {
+        cin >> vetor1[i];
+    }
+
+    for (int i = 0; i < qNum; i++) {
+        cin >> vetor2[i];
+    }
+        
+    bool iguais = false;
     int indiceVet1 = 0, indiceVet2 = 0;
 
-    while ((indiceVet1 < qNum) and (iguais == true)) {
-        indiceVet2 = 0;
+    //fazer uma condicao pra caso passar o vetor2 todo e nao tiver um numero igual ao que ta no indice do vetor1, iguais vira falso e cai na parte de DIFERENTES
+    
 
-        if (vetor1[indiceVet1] != vetor2[indiceVet2]) {
-            iguais = false;
-        }
 
-        else {
-            indiceVet2++;
-            if (indiceVet2 < qNum) {
-                indiceVet1++;
-            }
-        }
-    }
+
 
     if (iguais == true) {
         cout << "IGUAIS" << endl;
