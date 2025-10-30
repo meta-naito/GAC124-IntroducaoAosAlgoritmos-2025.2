@@ -26,8 +26,9 @@ int main() {
 	}
 
 	int retNoPonto = 0;
-
+	//calculo dos retangulos que incluem o ponto!!
 	for (int i = 0; i < qRetangulos; i++) {
+		//if lindo do caceteKKKK NÃO JULGA :(((
 		if ((retangulos[i].v1.X <= P.X) and (retangulos[i].v1.Y <= P.Y)
 			and (retangulos[i].v2.X >= P.X) and (retangulos[i].v2.Y >= P.Y)) {
 				retNoPonto++;
