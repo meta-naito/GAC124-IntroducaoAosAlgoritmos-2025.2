@@ -1,3 +1,4 @@
+//semana 7, atividade prática 1
 #include <iostream>
 #include <cmath>
 using namespace std;

@@ -1,4 +1,4 @@
-//semana 10, questao pratica 1
+//semana 10, atividade prática 1
 //GENGAR É IMPORTANCIA NUMERO 8 VIU !!!!!
 #include <iostream>
 using namespace std;

@@ -31,8 +31,7 @@ Exemplo de Entrada:
 50
 25
 
-
-##Q18:
+## Q18:
 O cálculo de resto de uma divisão inteira tem uma grande importância na criptografia moderna. Vários dos métodos são baseados em propriedades envolvendo restos de divisão por números primos, inclusive.
 
 Nesta atividade, seu objetivo é implementar um método bastante simples para codificar um valor. Você irá receber um valor, a partir da entrada padrão e, na sequência, ler três números primos em um arquivo de entrada denominado chaves.txt. Na sequência, você irá calcular o resto da divisão do valor inicial por cada um dos valores primos, escrevendo o resultado no arquivo codigo.txt.
@@ -81,8 +80,7 @@ Exemplo de Saída (arquivo codigo.txt):
 3
 2
 
-
-##Q19:
+## Q19:
 Implemente um programa que receba no arquivo tempo.txt um número que represente o tempo em milissegundos que se passou desde as 00 : 00 : 00 (HORAS : MINUTOS : SEGUNDOS) horas de um dia. O seu programa deve imprimir no arquivo horario.txt a hora representada por este número de milissegundos.
 
 Entrada (arquivo tempo.txt):
@@ -109,8 +107,7 @@ Exemplo de Saída horario.txt:
 
 2:25:46.9
 
-
-##Q20:
+## Q20:
 Faça um programa para uma loja de tintas. O programa deverá receber, em um arquivo entrada.txt o tamanho em metros quadrados da área a ser pintada e o valor do galão de tinta. Considere que o rendimento da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros. Feito isso, informe ao usuário, no arquivo saida.txt a quantidade de latas de tinta a serem compradas e o preço total.
 
 Dicas: utilize a biblioteca cmath e a função ceil(); utilize a biblioteca iomanip, e as funções fixed e setprecision().
@@ -135,8 +132,7 @@ Exemplo de Saída (arquivo saida.txt):
 3
 240.00
 
-
-##Q21:
+## Q21:
 As coordenadas geográficas expressam de forma exata em graus a posição de qualquer ponto na superfície do globo terrestre. A medida de grau possui duas notações, grau em notação sexagesimal (grau, minuto e segundo) e grau em notação decimal. A notação sexagesimal é obtida a partir da notação decimal da seguinte maneira:
 O Grau corresponde ao valor da parte inteira da notação decimal.
 O minuto é obtido com o valor absoluto da parte fracionária da notação decimal multiplicado por 60, pegando somente a parte inteira deste resultado.
@@ -162,8 +158,7 @@ Exemplo de Saída (arquivo coordenadas.txt):
 45
 51
 
-
-##Q22:
+## Q22:
 O dia dos namorados está chegando e você quer presentear a sua linda e querida namorada com o que ela mais gosta: doces! E, para variar, ela gosta dos presentes mais caros e menos dos mais baratos.
 
 Tabela de preços dos doces:
@@ -223,8 +218,7 @@ Exemplo de Saída (arquivo doces.txt):
 0
 2
 
-
-##Q23:
+## Q23:
 Faça um programa que receba como um entrada um número inteiro N de 6 algarismos, tal que 100000 <= N <= 999999, e a partir dele calcule um novo número inteiro M de 5 algarismos. O dado será lido do arquivo entrada.txt e o resultado será gravado no arquivo saida.txt.
 
 O valor de M será calculado a partir da divisão inteira dos algarismos de N. O 1º algarismo de M será o resultado da divisão inteira do 1º algarismo de N pelo 2º algarismo de N; o 2º algarismo de M será o resultado da divisão inteira do 2º algarismo de N pelo 3º algarismo de N, e assim sucessivamente. Atente-se ao fato de que, ao final, M será um único número inteiro de cinco algarismos.
@@ -255,8 +249,7 @@ Exemplo de Saída (arquivo saida.txt):
 
 11211
 
-
-##Q24:
+## Q24:
 O custo ao consumidor de um carro novo é a soma do preço de fábrica com o percentual de lucro do distribuidor e dos impostos aplicados ao preço de fábrica. Faça um programa que receba, em um arquivo dados.txt, o preço de fábrica de um veículo, o percentual de lucro do distribuidor e o percentual de impostos. Calcule e escreva num arquivo custo.txt: a) O valor correspondente ao lucro do distribuidor; b) O valor correspondente aos impostos; c) O preço final do veículo.
 
 A saída deve ser formatada utilizando duas casas decimais. Para isso, utilize a biblioteca iomanip e as funções fixed e setprecision().
@@ -285,8 +278,7 @@ Exemplo de Saída custo.txt:
 1250.00
 30000.00
 
-
-##Q25:
+## Q25:
 Ao vender os produtos à prazo, uma determinada loja cobrava 10% de acréscimo no valor do produto. Como os clientes começaram a reclamar, o dono do comércio disse que não cobraria mais acréscimos. Mas os boletos já estavam todos impressos; ele então ordenou aos funcionários que dessem 10% de desconto sobre o valor da prestação na hora que os clientes fizessem o pagamento. Os funcionários discutiram entre si que o dono deveria ter faltado às aulas de matemática na escola, mas quando tentaram argumentar ele não aceitou. Portanto, eles cumpriram a ordem.
 
 Faça um programa que receba no arquivo venda.txt o valor à vista de um produto e o número de prestações (um em cada linha). Calcule e imprima no arquivo cliente.txt: i) o total que um cliente pagaria para a loja antes da reclamação dos clientes; ii) o valor de cada prestação antes da reclamação; iii) o valor atualizado de cada prestação; e iv) o valor total a ser pago pelo cliente.
@@ -346,12 +338,3 @@ Exemplo de Saída (arquivo cliente.txt):
 54.95
 49.46
 98.92
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-//semana 10, questao pratica 2
+//semana 10, atividade prática 2
 #include <iostream>
 using namespace std;
 
