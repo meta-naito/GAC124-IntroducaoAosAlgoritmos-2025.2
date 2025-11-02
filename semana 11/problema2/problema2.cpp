@@ -1,30 +1,43 @@
 //semana 11, ex 2
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
 
-struct dataCalendario {
-    int dia, mes, ano;
+struct dataAniversario {
+    int dia;
+    int mes;
+    int ano;
 };
 
-struct pessoa {
+struct individuo {
     string nome;
-    dataCalendario aniversario;
+    dataAniversario aniversario;
 };
 
-string descobreMaisVelha(pessoa *pessoas, int qPessoas, string& maisVelho) {
-    maisVelho = pessoas[0].nome;
+string descobreMaisVelha(individuo *pessoas, int qPessoas) {
+    individuo maisVelha = pessoas[0];
 
-    for (int i = 0; i < qPessoas; i++) {
+    for (int i = 1; i < qPessoas; i++) {
+        if (pessoas[i].aniversario.ano < maisVelha.aniversario.ano) {
+            maisVelha = pessoas[i];
+        }
 
-
-
-
-
+        else if (pessoas[i].aniversario.ano == maisVelha.aniversario.ano) {
+            if (pessoas[i].aniversario.mes < maisVelha.aniversario.mes) {
+                maisVelha = pessoas[i];
+            }
+            
+            else if (pessoas[i].aniversario.mes == maisVelha.aniversario.mes) {
+                if (pessoas[i].aniversario.dia < maisVelha.aniversario.dia) {
+                    maisVelha = pessoas[i];
+                }
+            }
+        }
     }
 
-
-
-    return maisVelho;
+    return maisVelha.nome;
 }
 
 int main() {
@@ -32,17 +45,15 @@ int main() {
 
     cin >> qPessoas;
 
-    pessoa *pessoas = new pessoa[qPessoas];
+    individuo *pessoas = new individuo[qPessoas];
 
     for (int i = 0; i < qPessoas; i++) {
         cin >> pessoas[i].nome;
         cin >> pessoas[i].aniversario.dia >> pessoas[i].aniversario.mes
         >> pessoas[i].aniversario.ano;
     }
-
-    string maisVelho = "";
     
-    cout << descobreMaisVelha(pessoas, qPessoas, maisVelho) << endl;
+    cout << descobreMaisVelha(pessoas, qPessoas) << endl;
 
     delete [] pessoas;
 
