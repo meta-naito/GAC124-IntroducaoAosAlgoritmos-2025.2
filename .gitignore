@@ -1,2 +1,7 @@
 # pasta de configurações do vs code mesmo
-.vscode
+.vscode/**
+
+# quero ver se eles tb ignoram as builds dos programas kk
+* .exe
+* .o
+* .tmp
