@@ -4,7 +4,7 @@ using namespace std;
 
 int calculaMaior(int vetMultiplo[], int tam, int multiplo);
 
-void calculaMultiplo(int vet[], int tam, int multiplo) {
+void calculaMultiploEMaior(int vet[], int tam, int multiplo) {
     int vetMultiplo[tam];
     int j = 0;
 
@@ -38,9 +38,9 @@ int main() {
         cin >> vetorPrincipal[i];
     }
 
-    calculaMultiplo(vetorPrincipal, tamVetor, 2);
+    calculaMultiploEMaior(vetorPrincipal, tamVetor, 2);
 
-    calculaMultiplo(vetorPrincipal, tamVetor, 3);
+    calculaMultiploEMaior(vetorPrincipal, tamVetor, 3);
 
     return 0;
 }

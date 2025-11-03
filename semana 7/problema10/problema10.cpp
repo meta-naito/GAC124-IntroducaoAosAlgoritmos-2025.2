@@ -16,6 +16,8 @@ int calcMaior(int vet[], int tam) {
 void divisao(int vet[], int tam, int maior) {
     for (int i = 0; i < tam; i++)
         vet[i] /= maior;
+    
+    return;
 }
 
 int main () {
