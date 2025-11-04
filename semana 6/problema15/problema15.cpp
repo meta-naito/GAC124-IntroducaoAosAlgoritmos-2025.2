@@ -1,26 +1,31 @@
 //semana 6, ex 15
 #include <iostream>
-using namespace std;
 
-int calculaSimplificacao(int& num) {
-    int aux = 2;
+int calculaMDC(int dividendo, int divisor) {
+    int resto = 0;
 
-    while (num >= 1) {
-        if (num % aux == 0) {
-            num /= aux;
-        }
-        aux++;
+    while (divisor != 0) {
+        resto = dividendo % divisor;
+        dividendo = divisor;
+        divisor = resto;
     }
+    int mdc = dividendo;
 
-    return num;
+    return mdc;
 }
+
+int calculaSimplificacao(int num1, int divisor) {
+    return (num1 / divisor);
+}
+
 
 int main () {
     int numerador, denominador;
-    cin >> numerador >> denominador;
+    std::cin >> numerador >> denominador;
 
-    cout << calculaSimplificacao(numerador);//<< endl << calculaSimplificacao(denominador) << endl;
+    int divisor = calculaMDC(numerador, denominador);
 
+    std::cout << calculaSimplificacao(numerador, divisor) << std::endl << calculaSimplificacao(denominador, divisor) << std::endl;
 
     return 0;
 }
