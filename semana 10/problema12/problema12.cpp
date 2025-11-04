@@ -16,7 +16,7 @@ int somasSucessivas(int num1, int num2) {
 int main() {
     int num1 = 0, num2 = 0;
 
-    std::cin >> num1 >> num2;
+    std::cin >> num1 >> num2;       
 
     std::cout << somasSucessivas(num1, num2) << std::endl;
 

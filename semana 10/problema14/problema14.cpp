@@ -26,7 +26,6 @@ int buscaBinaria(int *vetor, int posInicial, int posFinal, int procurado) {
     }
 }
 
-
 int main() {
     int tamVetor = 0;
 

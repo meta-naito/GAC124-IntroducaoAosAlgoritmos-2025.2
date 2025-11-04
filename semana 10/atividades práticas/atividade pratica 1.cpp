@@ -12,7 +12,7 @@ int main() {
 	//entrada dos pokemons
 	for (i = 0; i < tam; i++) {
 		for (j = 0; j < tam; j++) {
-			cin >> matriz[i][j];
+			std::cin >> matriz[i][j];
 		}
 	}
 	
