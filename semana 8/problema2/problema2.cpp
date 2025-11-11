@@ -1,44 +1,47 @@
 //semana 8, ex 2
 #include <iostream>
-using namespace std;
 
-void leitura(int vetor[], int tamVetor) {
+//preeeeeguiçaaaaa KKKKK
+void leituraVetor(int *&vetor, int tamVetor) {
     for (int i = 0; i < tamVetor; i++) {
-        cin >> vetor[i];
+        std::cin >> vetor[i];
     }
+
+    return;
+}
+
+int contaIguais(int *vetor1, int *vetor2, int tam) {
+    int qIguais = 0;
+
+    //conta quantos numeros iguais tem nos vetores
+    for (int iVet1 = 0; iVet1 < tam; iVet1++) {
+        for (int iVet2 = 0; iVet2 < tam; iVet2++) {
+            if (vetor1[iVet1] == vetor2[iVet2]) {
+                qIguais++;
+            }
+        }
+    }
+
+    return qIguais;
 }
 
 int main() {
     int qNum = 0;
-
-    cin >> qNum;
+    std::cin >> qNum;
 
     int *vetor1 = new int[qNum];
+    leituraVetor(vetor1, qNum);
+
     int *vetor2 = new int[qNum];
+    leituraVetor(vetor2, qNum);
 
-    for (int i = 0; i < qNum; i++) {
-        cin >> vetor1[i];
-    }
-
-    for (int i = 0; i < qNum; i++) {
-        cin >> vetor2[i];
-    }
-        
-    bool iguais = false;
-    int indiceVet1 = 0, indiceVet2 = 0;
-
-    //fazer uma condicao pra caso passar o vetor2 todo e nao tiver um numero igual ao que ta no indice do vetor1, iguais vira falso e cai na parte de DIFERENTES
-    
-
-
-
-
-    if (iguais == true) {
-        cout << "IGUAIS" << endl;
+    //se contaIguais for igual ao tamanho do vetor (quantidade de numeros), implica que todos os numeros do vetor são iguais pela funcao
+    if (contaIguais(vetor1, vetor2, qNum) == qNum) {
+        std::cout << "IGUAIS" << std::endl;
     }
 
     else {
-        cout << "DIFERENTES" << endl;
+        std::cout << "DIFERENTES" << std::endl;
     }
 
     delete [] vetor1;

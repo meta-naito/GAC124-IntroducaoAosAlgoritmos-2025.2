@@ -34,7 +34,6 @@ void redimensionaVetor(char *&vetor, int &tam) {
 
     }
 
-
     return;
 }
 
