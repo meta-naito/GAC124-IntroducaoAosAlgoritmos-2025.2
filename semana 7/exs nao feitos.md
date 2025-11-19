@@ -39,61 +39,6 @@ Exemplo de Saída:
 
 -1
 
-## Q15:
-Na matemática a união de dois conjuntos A e B é representada por A ∪ B e é formada por todos os elementos pertencentes a A ou B. Por exemplo, seja A = {1, 2, 3} e B = {4, 5}, então a união destes dois conjuntos será A ∪ B = {1, 2, 3, 4, 5}, porém caso um elemento esteja em ambos os conjuntos ele não irá aparecer duas vezes no conjunto união, por exemplo, seja A = {1, 2, 3} e B = {1, 2, 4}, assim a união será A ∪ B = {1, 2, 3, 4}.
-
-Utilizando os conceitos de conjunto faça um programa que leia dois vetores A e B, cada um com 5 elementos, e determine a união.
-
-Entradas:
-
-    Elementos do vetor A.
-    Elementos do vetor B.
-
-Saídas:
-
-    Vetor C representado a união dos vetores A e B.
-
-Exemplo de Entrada:
-
-0 1 2 3 4
-2 4 6 8 10
-
-Exemplo de Saída:
-
-0 1 2 3 4 6 8 10
-
-## Q16:
-Na matemática a interseção de dois conjuntos A e B é representada por A ∩ B e é formada por todos os elementos pertencentes a A e B ao mesmo tempo. Por exemplo, seja A = {1, 2, 3} e B = {1, 4, 5}, então a interseção destes dois conjuntos será A ∩ B = {1}. Um outro exemplo é dado por A = {1, 2, 3, 4} e B = {1, 2, 4, 5, 3}, com interseção dada por A ∩ B = {1, 2, 3, 4}. Caso A e B sejam dadas por A = {1, 2, 3, 4} e B = { 5, 6, 7}, então a interseção seja dada por A ∩ B = { }.
-
-Utilizando os conceitos de conjunto faça um programa que leia dois vetores A e B, cada um com 5 elementos, e determine a interseção desses vetores.
-
-Entradas:
-
-    Elementos do vetor A.
-    Elementos do vetor B.
-
-Saídas:
-
-    Vetor C representado a interseção dos vetores A e B. Caso a interseção seja vazia, imprima VAZIO.
-
-Exemplo de Entrada:
-
-0 1 2 3 4
-2 4 6 8 10
-
-Exemplo de Saída:
-
-2 4
-
-Exemplo de Entrada:
-
-0 1 2 3 4
-5 6 7 8 9
-
-Exemplo de Saída:
-
-VAZIO
-
 ## Q17:
 Na matemática a diferença do conjunto B para o conjunto A é representada por A - B e é formada por todos os elementos pertencentes a A que não pertencem a B. Por exemplo, seja A = {1, 2, 3} e B = {1, 4, 5}, então a diferença de B para A será A - B = {2, 3}. Um outro exemplo é dado por A = {1, 2, 3, 4} e B = {1, 2, 4, 5, 3}, com diferença dada por A - B = { }. Caso A e B sejam dadas por A = {1, 2, 3, 4} e B = {5, 6, 7}, então a diferença será dada por A - B = {1, 2, 3, 4}.
 
@@ -134,61 +79,6 @@ Exemplo de Entrada:
 Exemplo de Saída:
 
 VAZIO
-
-## Q18:
-Faça um programa que leia um vetor de 10 números inteiros, encontre e escreva o maior e o menor elemento e suas respectivas posições. No caso do maior ou menor elemento aparecerem mais de uma vez no vetor, informe a primeira ocorrência
-
-Entradas:
-
-    cada elemento do vetor
-
-Saídas:
-
-    o maior valor do vetor
-    o índice do maior valor do vetor
-    o menor valor do vetor
-    o índice do menor valor do vetor
-
-É obrigatório que a leitura de todos os elementos do vetor seja feita antes do processamento dos elementos do vetor.
-
-Exemplo de entrada:
-
-1 2 5 7 3 0 99 9 -2 11
-
-Exemplo de saída:
-
-99 6
--2 8
-
-Exemplo de entrada:
-
-1 2 5 3 2 1 0 4 5 0
-
-Exemplo de saída:
-
-5 2
-0 6
-
-## Q19:
-Dados dois vetores x e y, ambos com 5 elementos, determinar o produto escalar desses vetores.
-
-Para calcular o produto escalar utilize a seguinte fórmula:
-        n
-A ⋅ B = ∑    a^i b^i = a^1 b^1 + a^2 b^2 + ⋯ + a^n b^n
-     (i = 1)
-
-Entrada:
-A primeira linha será os 5 valores de cada posição do primeiro vetor. A segunda linha será os 5 valores de cada posição do segundo vetor.
-
-Exemplo de entrada:
-2.2 3.5 1 2.8 1.6
-1.2 6.5 3 2 1.65
-
-Saída:
-A saída dever ser composta de apenas uma linha contendo o valor do produto escalar.
-
-Exemplo de saída:
-36.63
 
 ## Q20:
 Em estatística, moda é o valor que ocorre com maior frequência num conjunto de dados, não sendo necessariamente única. Por exemplo a série {1, 3, 5, 5, 6, 6} apresenta 2 modas: 5 e 6.
